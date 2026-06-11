@@ -284,14 +284,14 @@ export default function Portfolio() {
               <div className="mt-8 flex flex-wrap items-center gap-3">
                 <button
                   onClick={() => scrollTo("portfolio")}
-                  className="group inline-flex items-center gap-2 rounded-xl bg-[image:var(--gradient-primary)] px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.03]"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-[image:var(--gradient-primary)] px-5 py-3 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)][...]
                 >
                   View my work
                   <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                 </button>
                 <button
                   onClick={() => scrollTo("contact")}
-                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 py-3 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-accent"
+                  className="inline-flex items-center gap-2 rounded-xl border border-border bg-surface/60 px-5 py-3 text-sm font-semibold text-foreground backdrop-blur transition-colors hover:bg-[...]
                 >
                   Get in touch
                 </button>
@@ -408,8 +408,8 @@ export default function Portfolio() {
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {SERVICES.map((s, i) => (
             <FadeUp key={s.title} delay={i * 0.04}>
-              <div className="group h-full rounded-2xl border border-border bg-surface-elevated p-6 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elevated)]">
-                <div className="mb-5 inline-grid size-12 place-items-center rounded-xl bg-accent text-accent-foreground transition-colors group-hover:bg-[image:var(--gradient-primary)] group-hover:text-primary-foreground">
+              <div className="group h-full rounded-2xl border border-border bg-surface-elevated p-6 shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var([...]
+                <div className="mb-5 inline-grid size-12 place-items-center rounded-xl bg-accent text-accent-foreground transition-colors group-hover:bg-[image:var(--gradient-primary)] group-hove[...]
                   <s.icon className="size-5" />
                 </div>
                 <h3 className="font-display text-lg font-semibold tracking-tight">{s.title}</h3>
@@ -451,7 +451,7 @@ export default function Portfolio() {
         <div className="grid gap-6 lg:grid-cols-3">
           {CASES.map((c, i) => (
             <FadeUp key={c.title} delay={i * 0.08}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface-elevated shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elevated)]">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface-elevated shadow-[var(--shadow-soft)] transition-all duration-300 hover:-tr[...]
                 <div className="relative aspect-[16/10] overflow-hidden bg-[image:var(--gradient-hero)]">
                   <div className="absolute inset-0 bg-[image:var(--gradient-primary)] opacity-10" />
                   <div className="absolute left-5 top-5">
@@ -585,7 +585,7 @@ export default function Portfolio() {
         <div className="grid gap-6 md:grid-cols-3">
           {POSTS.map((p, i) => (
             <FadeUp key={p.title} delay={i * 0.08}>
-              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface-elevated shadow-[var(--shadow-soft)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-elevated)]">
+              <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface-elevated shadow-[var(--shadow-soft)] transition-all duration-300 hover:-tr[...]
                 <div className="aspect-[16/9] bg-[image:var(--gradient-hero)] relative">
                   <div className="absolute inset-0 bg-[image:var(--gradient-primary)] opacity-15" />
                   <span className="absolute left-5 top-5 rounded-full bg-background/80 px-3 py-1 text-xs font-medium backdrop-blur">{p.tag}</span>
@@ -642,7 +642,7 @@ export default function Portfolio() {
                     key={i}
                     href="#"
                     aria-label="Social"
-                    className="grid size-11 place-items-center rounded-xl border border-border bg-surface-elevated text-foreground transition-all hover:-translate-y-0.5 hover:bg-[image:var(--gradient-primary)] hover:text-primary-foreground"
+                    className="grid size-11 place-items-center rounded-xl border border-border bg-surface-elevated text-foreground transition-all hover:-translate-y-0.5 hover:bg-[image:var(--grad[...]
                   >
                     <Icon className="size-4" />
                   </a>
@@ -690,12 +690,12 @@ export default function Portfolio() {
                 <textarea
                   rows={5}
                   placeholder="Tell me about your goals, channels and timeline..."
-                  className="w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+                  className="w-full resize-none rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outlin[...]
                 />
               </div>
               <button
                 type="submit"
-                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[image:var(--gradient-primary)] px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.01]"
+                className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[image:var(--gradient-primary)] px-5 py-3.5 text-sm font-semibold text-primary-foreground shadow[...]
               >
                 Send message <ArrowRight className="size-4" />
               </button>
@@ -756,7 +756,7 @@ export default function Portfolio() {
           animate={{ opacity: 1, scale: 1 }}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Back to top"
-          className="fixed bottom-6 right-6 z-50 grid size-12 place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-110"
+          className="fixed bottom-6 right-6 z-50 grid size-12 place-items-center rounded-full bg-[image:var(--gradient-primary)] text-primary-foreground shadow-[var(--shadow-glow)] transition-tra[...]
         >
           <ChevronUp className="size-5" />
         </motion.button>
@@ -776,7 +776,7 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
         name={name}
         type={type}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20"
+        className="w-full rounded-xl border border-border bg-background px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-2 fo[...]
       />
     </div>
   );
